@@ -517,6 +517,7 @@ body {
       stroke-dashoffset: calc(283 - (283 * var(--percent)) / 100);
       transition: stroke-dashoffset 1s ease;
     }
+        
     .progress-text {
       position: absolute;
       top: 50%;
