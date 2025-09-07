@@ -8,7 +8,6 @@ Check out the live version here: [Portfolio Live](https://RaghadAi1.github.io/Po
 
 ## Features
 
-- Responsive design for various devices
 - Interactive project gallery
 - Smooth scrolling navigation
 
