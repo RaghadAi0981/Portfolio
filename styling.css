@@ -739,7 +739,7 @@ pointer-events: none;
 }
 .block{
   flex: 1;
-  background-color: #f8f8f8;
+  background-color: #f4faff;
   transform: scaleY(1);
   will-change: transform;
 }
