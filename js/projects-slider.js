@@ -1,6 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
+function initProjectsSlider() {
   const slider = document.querySelector('.projects-slider');
   if (!slider) return;
+  if (slider.dataset.sliderInitialized) return;
+  slider.dataset.sliderInitialized = 'true';
 
   const track = slider.querySelector('.proj-track');
   const viewport = slider.querySelector('.proj-viewport');
@@ -8,9 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const next = slider.querySelector('.next');
   const cards = Array.from(track.children);
 
-  // احسب كم بطاقة تُعرَض (حسب CSS)
   const getVisibleCount = () => {
-    return window.matchMedia('(max-width:780px)').matches ? 1 : 2;
+    return window.matchMedia('(max-width:100%)').matches ? 1 : 2;
   };
 
   let index = 0;
@@ -62,4 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // أول تحديث
   update();
-});
+}
+
+window.initProjectsSlider = initProjectsSlider;
+document.addEventListener('DOMContentLoaded', initProjectsSlider);

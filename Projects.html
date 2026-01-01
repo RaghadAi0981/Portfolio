@@ -6,18 +6,28 @@
   <title>Projects</title>
   <link rel="stylesheet" href="styling.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <script src="js/nav.js" defer></script>
+  <!-- <script src="js/nav.js" defer></script> -->
   
 </head>
-<div class="wrapper1">
-    <div class="left-half"></div>
-    <div class="right-half"></div>
-  </div>
 <body>
   <!-- Background halves -->
   
-
-  <!-- ✅ Navbar first -->
+  <div class="transition">
+    <div class="transition-row row-1">
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="transition-row row-2">
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+  </div>
    <!-- ===== Navbar ===== -->
    <nav class="navbar1">
       <div class="container">
@@ -26,7 +36,7 @@
           <li><a class="nav-link " href="About_me.html">About me</a></li>
           <li><a class="nav-link active" href="Projects.html">Projects</a></li>
           <li><a class="nav-link" href="skills.html">Skills</a></li>
-                              <li><a class="nav-link " href="contact.html">Contact</a></li>
+                              <!-- <li><a class="nav-link " href="contact.html">Contact</a></li> -->
           <li>
             
             </a>
@@ -35,90 +45,96 @@
       </div>
     </nav>
    <!-- ===== /Navbar ===== -->
-<section class="projects-header">
-  <h2> My Projects</h2>
-</section>
+  <main id="spa-root" data-spa-content>
+    <div class="wrapper1">
+      <div class="left-half"></div>
+      <div class="right-half"></div>
+    </div>
 
-    </header>
-  <section id="projects" class="projects-slider">
-  <h2 class="sr-only">Projects</h2>
+    <section class="projects-header">
+      <h2> My Projects</h2>
+    </section>
 
-  <button class="proj-btn prev" aria-label="Previous">‹</button>
+        </header>
+      <section id="projects" class="projects-slider">
+      <h2 class="sr-only">Projects</h2>
 
-  <div class="proj-viewport">
-    <div class="proj-track">
-      <!-- Slide 1 -->
-           <article class="project-card">
-        <div class="project-img" style="background-image:url('Photos/flutter.png');"></div>
-        <div class="project-content">
-          <h3>Property_Management</h3>
-          <p class="project-sub"> real estate website designed to showcase properties, services, and company information in a clear and professional way.</p>
-          <div class="project-links">
-            <a href="https://github.com/RaghadAi0981/Property_Management" target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-      </article>
-      <!-- Slide 2 -->
-      <article class="project-card">
-        <div class="project-img" style="background-image:url('Photos/mysql2.png');"></div>
-        <div class="project-content">
-          <h3>Blood Donation Management System</h3>
-          <p class="project-sub">MySQL project for hospital donors</p>
-          <div class="project-links">
-            <a href="https://github.com/RaghadAi1/Blood-Donation-Management-System" target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-      </article>
+      <button class="proj-btn prev" aria-label="Previous">‹</button>
 
-      <!-- Slide 2 -->
-      <article class="project-card">
-        <div class="project-img" style="background-image:url('Photos/software-engineering-banner2400.png');"></div>
-        <div class="project-content">
-          <h3>Book Inventory System</h3>
-          <p class="project-sub">Software Engineering system to manage books</p>
-          <div class="project-links">
-            <a href="https://github.com/RaghadAi1/Software-" target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-      </article>
+      <div class="proj-viewport">
+        <div class="proj-track">
+          <!-- Slide 1 -->
+               <article class="project-card">
+            <div class="project-img" style="background-image:url('Photos/flutter.png');"></div>
+            <div class="project-content">
+              <h3>Property_Management</h3>
+              <p class="project-sub"> real estate website designed to showcase properties, services, and company information in a clear and professional way.</p>
+              <div class="project-links">
+                <a href="https://github.com/RaghadAi0981/Property_Management" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </article>
+          <!-- Slide 2 -->
+          <article class="project-card">
+            <div class="project-img" style="background-image:url('Photos/mysql2.png');"></div>
+            <div class="project-content">
+              <h3>Blood Donation Management System</h3>
+              <p class="project-sub">MySQL project for hospital donors</p>
+              <div class="project-links">
+                <a href="https://github.com/RaghadAi1/Blood-Donation-Management-System" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </article>
 
-      <!-- Slide 3 -->
-      <article class="project-card">
-        <div class="project-img" style="background-image:url('Photos/figma.png');"></div>
-        <div class="project-content">
-          <h3>UI/UX Design</h3>
-          <p class="project-sub">Planetary Journey: Interstellar Adventure</p>
-          <div class="project-links">
-            <a href="https://www.figma.com/proto/t3bvh3RqVXcOJl1KVTmhsd/Ui%2FUx?node-id=205-2&t=gghcW3mC4RGADat2-1&scaling=contain&content-scaling=fixed" target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-      </article>
-<!-- Slide 4 -->
-      <article class="project-card">
-        <div class="project-img" style="background-image:url('Photos/python.png');"></div>
-        <div class="project-content">
-          <h3>python Projects</h3>
-          <p class="project-sub">Data science Projects</p>
-          <div class="project-links">
-            <a href="https://github.com/RaghadAi1/Python_Projects_DataScience" target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-      </article>
-      <!-- Slide 4 -->
-      <article class="project-card">
-        <div class="project-img" style="background-image:url('Photos/Django.png');"></div>
-        <div class="project-content">
-          <h3>Django Project</h3>
-          <p class="project-sub">BlogWebsite,Admin page</p>
-          <div class="project-links">
-            <a href="https://github.com/RaghadAi1/BlogWebsite_Django" target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-      </article>
-       <!-- Slide 4 -->
-      <article class="project-card">
-        <div class="project-img" style="background-image:url('Photos/flutter.png');"></div>
-        <div class="project-content">
+          <!-- Slide 2 -->
+          <article class="project-card">
+            <div class="project-img" style="background-image:url('Photos/software-engineering-banner2400.png');"></div>
+            <div class="project-content">
+              <h3>Book Inventory System</h3>
+              <p class="project-sub">Software Engineering system to manage books</p>
+              <div class="project-links">
+                <a href="https://github.com/RaghadAi1/Software-" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Slide 3 -->
+          <article class="project-card">
+            <div class="project-img" style="background-image:url('Photos/figma.png');"></div>
+            <div class="project-content">
+              <h3>UI/UX Design</h3>
+              <p class="project-sub">Planetary Journey: Interstellar Adventure</p>
+              <div class="project-links">
+                <a href="https://www.figma.com/proto/t3bvh3RqVXcOJl1KVTmhsd/Ui%2FUx?node-id=205-2&t=gghcW3mC4RGADat2-1&scaling=contain&content-scaling=fixed" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </article>
+    <!-- Slide 4 -->
+          <article class="project-card">
+            <div class="project-img" style="background-image:url('Photos/python.png');"></div>
+            <div class="project-content">
+              <h3>python Projects</h3>
+              <p class="project-sub">Data science Projects</p>
+              <div class="project-links">
+                <a href="https://github.com/RaghadAi1/Python_Projects_DataScience" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </article>
+          <!-- Slide 4 -->
+          <article class="project-card">
+            <div class="project-img" style="background-image:url('Photos/Django.png');"></div>
+            <div class="project-content">
+              <h3>Django Project</h3>
+              <p class="project-sub">BlogWebsite,Admin page</p>
+              <div class="project-links">
+                <a href="https://github.com/RaghadAi1/BlogWebsite_Django" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </article>
+           <!-- Slide 4 -->
+          <article class="project-card">
+            <div class="project-img" style="background-image:url('Photos/flutter.png');"></div>
+            <div class="project-content">
           <h3>Smart Health Management App</h3>
           <p class="project-sub">A Flutter application for managing health and nutrition </p>
           <div class="project-links">
@@ -161,11 +177,14 @@
 
   <div class="proj-dots" aria-hidden="true"></div>
 </section>
+  </main>
 
   
   <!-- Floating effects -->
-   <script src="js/projects-slider.js" defer></script>
-
+  <script src="js/spa.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="js/transistion.js" defer></script>
+  <script src="js/projects-slider.js" defer></script>
   <script src="js/effects.js" defer></script>
 </body>
 </html>

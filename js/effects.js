@@ -1,3 +1,8 @@
+let effectsInitialized = false;
+
+function initEffects() {
+  if (effectsInitialized) return;
+  effectsInitialized = true;
 
   // Enable mouse trail only on larger screens (desktop/tablet)
   if (window.innerWidth > 768) {
@@ -22,5 +27,8 @@
       }, 1000);
     });
   }
+}
 
+window.initEffects = initEffects;
+document.addEventListener('DOMContentLoaded', initEffects);
 

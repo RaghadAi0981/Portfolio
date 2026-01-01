@@ -11,12 +11,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- JS -->
-    <script src="js/nav.js" defer></script>
+    <!-- <script src="js/nav.js" defer></script> -->
  
   
     
 </head>
 <body>
+  <div class="transition">
+    <div class="transition-row row-1">
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="transition-row row-2">
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+  </div>
 
   <!-- Navbar -->
   <header id="hero">
@@ -32,13 +48,14 @@
           <li><a class="nav-link" href="About_me.html">About me</a></li>
           <li><a class="nav-link" href="Projects.html">Projects</a></li>
           <li><a class="nav-link active" href="skills.html">Skills</a></li>
-                              <li><a class="nav-link " href="contact.html">Contact</a></li>
+                              <!-- <li><a class="nav-link " href="contact.html">Contact</a></li> -->
 
         </ul>
       </div>
     </nav>
   </header>
 
+  <main id="spa-root" data-spa-content>
   <!-- Skills -->
   <section class="skills-container">
     <h2>My Skills</h2>
@@ -247,6 +264,10 @@
        
 </div>
   </section>
+  </main>
 
+  <script src="js/spa.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="js/transistion.js" defer></script>
 </body>
 </html>
