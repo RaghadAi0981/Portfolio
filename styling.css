@@ -255,7 +255,6 @@ h1::selection, h2::selection, p::selection { color: black; background: var(--pri
   border-color: rgba(17,24,39,.12);
 }
 
-/* صورة بنسبة 16:9 مع تكبير خفيف عند الهوفر */
 .project-img{
   aspect-ratio: 16 / 9;
   width: 100%;
@@ -332,10 +331,11 @@ box-shadow: 0 0.5vw 1vw rgba(140,181,222,0.3);
 }
 
 .proj-btn:hover {
-  transform: translateY(-50%) scale(1.08);
   box-shadow: 0 8px 20px rgba(140, 181, 222, 0.5);
   background: rgb(160, 195, 230); /* لون أفتح عند الهوفر */
 }
+.proj-btn.prev:hover { transform: translate(-40%, -50%) scale(1.08); }
+.proj-btn.next:hover { transform: translate(40%, -50%) scale(1.08); }
 
 .proj-btn:disabled {
   opacity: 0.4;
@@ -367,6 +367,7 @@ height: clamp(4px, 0.6vw, 8px); width: clamp(18px, 2vw, 26px);
   transition: width .25s ease, background .25s ease;
 }
 .proj-dots button.active { width: clamp(28px, 4vw, 44px); }
+.proj-dots button.active { background: rgb(140, 181, 222); }
 
 
 /* بطاقة نشِطة (تكبير بسيط) */
@@ -376,7 +377,7 @@ height: clamp(4px, 0.6vw, 8px); width: clamp(18px, 2vw, 26px);
 }
 
 /* Responsive */
-@media (max-width: 100%){
+@media (max-width: 900px){
   .projects-slider{ padding: 1.5rem 1.25rem; }
   .proj-viewport{
     -webkit-mask-image: none;

@@ -11,7 +11,7 @@ function initProjectsSlider() {
   const cards = Array.from(track.children);
 
   const getVisibleCount = () => {
-    return window.matchMedia('(max-width:100%)').matches ? 1 : 2;
+    return window.matchMedia('(max-width: 900px)').matches ? 1 : 2;
   };
 
   let index = 0;
@@ -29,7 +29,7 @@ function initProjectsSlider() {
   });
 
   function update() {
-    const cardWidth = cards[0].getBoundingClientRect().width + 24; // + gap
+    const cardWidth = cards[0].getBoundingClientRect().width + 28; // + gap
     track.style.transform = `translateX(${-index * cardWidth}px)`;
     dots.forEach((d, i) => d.classList.toggle('active', i === index));
     prev.disabled = index === 0;
