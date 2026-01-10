@@ -10,5 +10,5 @@ git add .
 git commit -m "$1"
 git push
 # chmod +x gitpush.sh
-# ./gitpush.sh "fixed a bug"    
+# ./gitpush.sh "add:new introduction,about me"    
     
